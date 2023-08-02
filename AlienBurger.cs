@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -8,8 +9,12 @@ namespace AlienBurger;
 
 public class AlienBurger : ModItem
 {
-	public override void SetStaticDefaults() {
-		Item.ResearchUnlockCount = 5;
+	public override void SetStaticDefaults()
+    {
+        DisplayName.SetDefault("Alien Burger");
+        Tooltip.SetDefault("{$CommonItemTooltip.MajorStats}\n'A burger made of green alien meat. Mmm!'\n'space terry'");
+
+        CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 5;
 
 		Main.RegisterItemAnimation(Type, new DrawAnimationVertical(int.MaxValue, 3));
 
