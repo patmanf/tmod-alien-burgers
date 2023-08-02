@@ -1,0 +1,5 @@
+displayName = alien burgers
+author = patman
+version = 6.9
+homepage = https://discord.gg/GdsQSgV
+includeSource = true

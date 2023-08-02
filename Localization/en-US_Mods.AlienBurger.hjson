@@ -1,0 +1,11 @@
+Items: {
+	AlienBurger: {
+		Tooltip:
+			'''
+			{$CommonItemTooltip.MajorStats}
+			'A burger made of green alien meat. Mmm!'
+			'space terry'
+			'''
+		DisplayName: Alien Burger
+	}
+}
